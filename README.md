@@ -32,11 +32,33 @@ Target Variable:
 ---
 
 ## Results
-- The trained model effectively distinguishes malicious traffic from normal traffic.
-- Evaluation metrics include:
-  - Accuracy
-  - Confusion Matrix
-  - Classification Report
+## Results
+The Network Intrusion Detection System was evaluated on the NSL-KDD test dataset to classify network traffic as **Normal** or **Attack**.
+
+- **Overall Accuracy:** 76.8%
+- **Total Test Samples:** 22,544
+
+### Confusion Matrix Summary
+- Normal traffic correctly classified: 9,448
+- Attacks correctly detected: 7,858
+- False positives: 263
+- False negatives: 4,975
+
+### Classification Metrics
+- Normal Traffic (Class 0):
+  - Precision: 0.66
+  - Recall: 0.97
+  - F1-score: 0.78
+- Attack Traffic (Class 1):
+  - Precision: 0.97
+  - Recall: 0.61
+  - F1-score: 0.75
+
+- **Macro Average F1-score:** 0.77  
+- **Weighted Average F1-score:** 0.76  
+
+The results demonstrate the model’s ability to detect a significant portion of network intrusions while maintaining high recall for normal traf
+
 
 ---
 
